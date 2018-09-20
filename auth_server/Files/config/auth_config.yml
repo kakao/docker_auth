@@ -1,0 +1,12 @@
+server:
+  addr: ":5001"
+  real_ip_header: "X-Forwarded-For"
+token:
+  issuer: Auth Service
+  certificate: "/ssl/d2hub.com.cert"
+  key: "/ssl/d2hub.com.key"
+  expiration: 3600
+d2hub_auth:
+  d2hub_url: http://d2hub.com
+acl_d2hub:
+  d2hub_url: http://d2hub.com
